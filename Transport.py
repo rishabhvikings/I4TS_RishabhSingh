@@ -1318,7 +1318,7 @@ def create_route_map(routes: Dict[str, Route], selected_route: str = 'balanced')
 
     @st.cache_data(show_spinner=False)
     def load_india_geojson():
-        path = "/Users/rishabhsingh/Downloads/india-soi.geojson"
+        path = "india-soi.geojson"
         with open(path, "r", encoding="utf-8") as f:
             return json.load(f)
 
